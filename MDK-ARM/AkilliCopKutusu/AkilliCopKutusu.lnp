@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"akillicopkutusu\startup_stm32f103xb.o"
+"akillicopkutusu\main.o"
+"akillicopkutusu\stm32f1xx_it.o"
+"akillicopkutusu\stm32f1xx_hal_msp.o"
+"akillicopkutusu\stm32f1xx_hal_gpio_ex.o"
+"akillicopkutusu\stm32f1xx_hal_tim.o"
+"akillicopkutusu\stm32f1xx_hal_tim_ex.o"
+"akillicopkutusu\stm32f1xx_hal.o"
+"akillicopkutusu\stm32f1xx_hal_rcc.o"
+"akillicopkutusu\stm32f1xx_hal_rcc_ex.o"
+"akillicopkutusu\stm32f1xx_hal_gpio.o"
+"akillicopkutusu\stm32f1xx_hal_dma.o"
+"akillicopkutusu\stm32f1xx_hal_cortex.o"
+"akillicopkutusu\stm32f1xx_hal_pwr.o"
+"akillicopkutusu\stm32f1xx_hal_flash.o"
+"akillicopkutusu\stm32f1xx_hal_flash_ex.o"
+"akillicopkutusu\stm32f1xx_hal_exti.o"
+"akillicopkutusu\system_stm32f1xx.o"
+--strict --scatter "AkilliCopKutusu\AkilliCopKutusu.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AkilliCopKutusu.map" -o AkilliCopKutusu\AkilliCopKutusu.axf
